@@ -1,0 +1,12 @@
+.cardcss {
+  margin-top: -3%;
+}
+
+.topCss {
+  background-color: rgb(41, 41, 41);
+}
+
+.MPCss {
+  transform: scale(1);
+  transition: 0.5s;
+}

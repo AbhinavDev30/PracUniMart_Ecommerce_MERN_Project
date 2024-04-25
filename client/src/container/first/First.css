@@ -1,0 +1,112 @@
+.grid {
+  display: grid;
+  gap: 6.4rem;
+}
+
+.grid-two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-hero {
+  & .grid {
+    align-items: center;
+    height: 150%;
+  }
+
+  /* background-color: rgb(174, 0, 255); */
+  min-height: 100vh; /* This ensures the section fills the viewport height */
+  background-size: cover;
+  /* filter: blur(8px); */
+  /* .img-responsive {
+    background-repeat: no-repeat;
+  } */
+
+  .hero-content {
+    & p {
+      margin: 2.4rem 0 4.8rem 0;
+      &:first-child {
+        margin: 0 0 1.2rem 0;
+      }
+    }
+  }
+  /* Style the <h1> element */
+  h1 {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
+
+  /* Define the typing animation */
+
+  p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    & img {
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+
+.container {
+  max-width: 140rem;
+  padding: 4rem 2.4rem;
+  margin: 0 auto;
+}
+
+/* .body {
+  background-image: url("https://media.istockphoto.com/id/1347626309/photo/latina-female-using-desktop-computer-with-clothing-online-web-store-to-choose-and-buy-clothes.webp?b=1&s=170667a&w=0&k=20&c=4kUNbsgz6Qx2yGHGw_z3KI814Ekc8xHmrByZ-0VsALM=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+} */
+
+/* Main page container */
+.page {
+  position: relative; /* Allows absolute positioning within */
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; /* Prevents any overflow */
+}
+
+/* Blurred background container */
+.blurred-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Background image properties */
+  background-image: url("https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Apply the blur effect */
+  filter: blur(8px);
+  z-index: 0; /* Behind other content */
+}
+
+/* Clear content container */
+.content {
+  position: relative; /* Keeps content on top */
+  z-index: 1; /* Ensures content stays on top of the background */
+}
+
+/* Style the hero section and other elements as needed */
+.section-hero {
+  padding: 2rem;
+}
+
+/* Add additional styles for buttons */
+.btn {
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.secondary-btn {
+  border: 2px solid rgb(255, 0, 0);
+  margin-left: 20px;
+}
